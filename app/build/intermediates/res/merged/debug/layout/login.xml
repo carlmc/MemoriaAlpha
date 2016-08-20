@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c6e431">
+
+
+    <ImageView
+        android:layout_width="275dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/alfa"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="JUEGA Y PODRÁS GANAR UNA"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#880606"
+        android:textSize="12dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Para comenzar, llena correctamente tu registro"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/editText"
+        android:layout_marginBottom="38dp"
+        android:layout_toEndOf="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView3"
+        android:background="@drawable/tablet"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/ingresar" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:text="Password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:id="@+id/ingresar"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="O Ingresa con:"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/ingresar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+
+</RelativeLayout>
