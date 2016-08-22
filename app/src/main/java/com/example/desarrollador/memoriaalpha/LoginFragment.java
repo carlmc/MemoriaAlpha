@@ -152,11 +152,17 @@ public class LoginFragment extends Fragment{
         ingresar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(getActivity(), InterfazJuegoFragment.class);
+
+                Intent intent = new Intent(getActivity(),InterfazJuegoFragment.class);
                 startActivity(intent);
-                //finish();
+
             }
         });
+    }
+
+    public void ingresajuego(){
+        Intent intent = new Intent(getActivity().getApplication(),InterfazJuegoFragment.class);
+        startActivity(intent);
     }
 
     /*private void goPremio(){

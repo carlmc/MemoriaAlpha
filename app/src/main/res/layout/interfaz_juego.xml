@@ -11,46 +11,71 @@
         android:layout_weight="1"
         android:background="#c6e431">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Puntaje:"
-            android:id="@+id/textView9"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Tiempo:"
-            android:id="@+id/textView10"
-            android:layout_centerVertical="true"
-            android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Puntaje:"
+                android:id="@+id/textpuntos"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"/>
 
-        <NumberPicker
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/numberPicker"
-            android:layout_above="@+id/textView10"
-            android:layout_toEndOf="@+id/textView9" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/puntaje_e"
+                android:layout_alignBottom="@+id/profile"
+                android:layout_toEndOf="@+id/textpuntos"
+                android:layout_marginLeft="10dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/name"
-            android:textSize="18sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/name"
+                android:text="aqui va"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/profile"
-            android:layout_below="@+id/numberPicker"
-            android:layout_alignParentEnd="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tiempo:"
+                android:id="@+id/time"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/tiempo_e"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBottom="@+id/time"
+                android:layout_alignStart="@+id/puntaje_e" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile"
+                android:layout_below="@+id/textpuntos"
+                android:layout_alignEnd="@+id/name" />
+
+        </RelativeLayout>
 
 
     </RelativeLayout>
@@ -64,10 +89,12 @@
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
 
 
-            <Button
+            <!--<Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="New Button"
@@ -118,7 +145,91 @@
                 android:text="New Button"
                 android:id="@+id/button8"
                 android:layout_alignTop="@+id/button7"
-                android:layout_alignStart="@+id/button6" />
+                android:layout_alignStart="@+id/button6" /> -->
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/carta1"
+                        android:layout_column="2"
+                        android:src="@drawable/img1"
+                        android:layout_marginLeft="60dp"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/carta2"
+                        android:layout_column="6"
+                        android:src="@drawable/img2"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="60dp"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/carta3"
+                        android:layout_column="2"
+                        android:src="@drawable/img3"
+                        android:layout_marginLeft="60dp"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/carta4"
+                        android:layout_column="6"
+                        android:src="@drawable/img4"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="60dp"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/carta5"
+                        android:layout_column="2"
+                        android:src="@drawable/img5"
+                        android:layout_marginLeft="60dp"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/carta6"
+                        android:layout_column="6"
+                        android:src="@drawable/img6"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="60dp"/>
+
+                </TableRow>
+
+
+            </TableLayout>
+
 
         </RelativeLayout>
 
@@ -134,7 +245,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Salir"
-            android:id="@+id/button"
+            android:id="@+id/salir5"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true" />
 

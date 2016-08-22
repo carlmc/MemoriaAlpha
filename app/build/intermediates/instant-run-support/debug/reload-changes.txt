@@ -1,0 +1,8 @@
+CHANGED,C:\Proyectos\MemoriaAlpha\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\desarrollador\memoriaalpha\InterfazJuegoFragment$8$override.class
+CHANGED,C:\Proyectos\MemoriaAlpha\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Proyectos\MemoriaAlpha\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\desarrollador\memoriaalpha\InterfazJuegoFragment$override.class
+CHANGED,C:\Proyectos\MemoriaAlpha\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\desarrollador\memoriaalpha\InterfazJuegoFragment$3$override.class
+CHANGED,C:\Proyectos\MemoriaAlpha\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\desarrollador\memoriaalpha\InterfazJuegoFragment$4$override.class
+CHANGED,C:\Proyectos\MemoriaAlpha\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\desarrollador\memoriaalpha\InterfazJuegoFragment$7$override.class
+CHANGED,C:\Proyectos\MemoriaAlpha\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\desarrollador\memoriaalpha\InterfazJuegoFragment$6$override.class
+CHANGED,C:\Proyectos\MemoriaAlpha\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\desarrollador\memoriaalpha\InterfazJuegoFragment$5$override.class
