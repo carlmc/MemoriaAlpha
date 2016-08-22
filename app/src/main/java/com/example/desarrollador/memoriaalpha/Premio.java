@@ -30,7 +30,7 @@ public class Premio extends AppCompatActivity {
 
         continuar.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(Premio.this, InterfazJuego.class);
+                Intent intent = new Intent(Premio.this, InterfazJuegoFragment.class);
                 startActivity(intent);
             }
         });

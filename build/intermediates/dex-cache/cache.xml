@@ -12,7 +12,7 @@
         jar="C:\Proyectos\androidProjects\MemoriaAlpha\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="24.0.1"
-        sha1="f53564ca0b6d325924d2f05b235f713430418e17">
+        sha1="f13ed06ae6a77287e8de97c5d7e0fb1c49ad4313">
         <dex dex="C:\Proyectos\androidProjects\MemoriaAlpha\app\build\intermediates\pre-dexed\debug\instant-run_a0218540821ea913d6d8a08bf5faf37aeabdbda7.jar" />
     </item>
     <item
@@ -89,7 +89,7 @@
         jar="C:\Proyectos\androidProjects\MemoriaAlpha\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.1"
-        sha1="1bde328b8741757e9363f0f5e1d9a2d26b27cf3d">
+        sha1="1108d183c157da921f8fb689f4d0907474c0a976">
         <dex dex="C:\Proyectos\androidProjects\MemoriaAlpha\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_0d41d3f9168933d06826a3bc38318b1688936e67.jar" />
     </item>
     <item
@@ -105,6 +105,13 @@
         revision="24.0.1"
         sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
         <dex dex="C:\Proyectos\androidProjects\MemoriaAlpha\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_4e0fd5f0f87584b08899e90bd287b098f2822e75.jar" />
+    </item>
+    <item
+        jar="C:\Users\Carlosmc\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.4.0\f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2\picasso-2.4.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="C:\Proyectos\androidProjects\MemoriaAlpha\app\build\intermediates\pre-dexed\debug\picasso-2.4.0_300ae3ab7d8a91e292dd7a349624ddca5af7532b.jar" />
     </item>
 
 </items>
