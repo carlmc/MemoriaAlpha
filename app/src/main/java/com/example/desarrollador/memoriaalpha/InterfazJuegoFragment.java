@@ -17,12 +17,15 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.facebook.Profile;
 import com.facebook.login.LoginManager;
 import com.squareup.picasso.Picasso;
 
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class InterfazJuegoFragment extends Fragment implements Runnable{
 
@@ -37,18 +40,26 @@ public class InterfazJuegoFragment extends Fragment implements Runnable{
     private int puntaje;
     private int tiempo;
 
-    private ImageButton img1;
-    private ImageButton img2;
-    private ImageButton img3;
-    private ImageButton img4;
-    private ImageButton img5;
-    private ImageButton img6;
+    private ImageView img1;
+    private ImageView img2;
+    private ImageView img3;
+    private ImageView img4;
+    private ImageView img5;
+    private ImageView img6;
 
     private int valores[] = {1,2,3,4,5,6};
-    private ImageButton images[];
+    private ImageView images[];
+
+    private int galeria[] = { R.drawable.img1, R.drawable.img2, R.drawable.img3,
+                                R.drawable.img4, R.drawable.img5, R.drawable.img6};
+
+    private static final Integer duracion = 2500;
+    private Timer timer;
+    private int posicion;
 
     private int valorSelect = -1;
     private int valorBorrar = 0;
+
 
 
     @Override
@@ -71,10 +82,9 @@ public class InterfazJuegoFragment extends Fragment implements Runnable{
 
         puntaje = 0;
         iniciarImagenes();
-        images = new ImageButton[]{img1,img2,img3,img3,img4,img5,img6};
-        desordenarImagenes();
+        //desordenarImagenes();
 
-        agregarEventos();
+        //agregarEventos();
 
         Bundle bundle = getArguments();
 
@@ -110,7 +120,7 @@ public class InterfazJuegoFragment extends Fragment implements Runnable{
         }
     };
 
-    private void desordenarImagenes(){
+    /*private void desordenarImagenes(){
         Random rdn = new Random();
         int aux;
         int indiceaux;
@@ -122,124 +132,243 @@ public class InterfazJuegoFragment extends Fragment implements Runnable{
             valores[i] = valores[indiceaux];
             valores[indiceaux] = aux;
         }
-    }
+    }*/
 
-    private void controlador(int opcion, ImageButton img){
+    private void controlador(int opcion, ImageView img){
         Bitmap bmp = null;
-        opcion--;
-        switch (valores[opcion]){
+        //opcion--;
+        switch (opcion){
             case 1:
-                bmp = BitmapFactory.decodeResource(getResources(),R.drawable.img1);
+                //bmp = BitmapFactory.decodeResource(getResources(),R.drawable.img1);
                 break;
             case 2:
-                bmp = BitmapFactory.decodeResource(getResources(),R.drawable.img2);
+                //bmp = BitmapFactory.decodeResource(getResources(),R.drawable.img2);
                 break;
             case 3:
-                bmp = BitmapFactory.decodeResource(getResources(),R.drawable.img3);
+                //bmp = BitmapFactory.decodeResource(getResources(),R.drawable.img3);
                 break;
             case 4:
-                bmp = BitmapFactory.decodeResource(getResources(),R.drawable.img4);
+                //bmp = BitmapFactory.decodeResource(getResources(),R.drawable.img4);
                 break;
             case 5:
-                bmp = BitmapFactory.decodeResource(getResources(),R.drawable.img5);
+                //bmp = BitmapFactory.decodeResource(getResources(),R.drawable.img5);
                 break;
             case 6:
-                bmp = BitmapFactory.decodeResource(getResources(),R.drawable.img6);
+                //bmp = BitmapFactory.decodeResource(getResources(),R.drawable.img6);
+                break;
+            case 7:
+                break;
+            case 8:
+                break;
+            case 9:
+                break;
+            case 10:
                 break;
         }
 
-        if (valorSelect == -1){
-            valorSelect = opcion;
-            img.setImageBitmap(bmp);
-        }
-        else {
-            if (valores[valorSelect] == valores[opcion]){
-                puntaje += 10;
-                puntaje_p.setText(puntaje + "");
+        if (valores[valorSelect] == valores[opcion]){
+            puntaje += 10;
+            puntaje_p.setText(puntaje + "");
 
-                img.setImageBitmap(bmp);
-                valorSelect = -1;
-            }
+            //img.setImageBitmap(bmp);
+            //valorSelect = -1;
         }
+
     }
 
-    private void iniciarImagenes(){
-        img1 = (ImageButton) getView().findViewById(R.id.carta1);
-        img1.setVisibility(View.VISIBLE);
-        img2 = (ImageButton) getView().findViewById(R.id.carta2);
-        //img2.setVisibility(View.VISIBLE);
-        img3 = (ImageButton) getView().findViewById(R.id.carta3);
-        img3.setVisibility(View.VISIBLE);
-        img4 = (ImageButton) getView().findViewById(R.id.carta4);
-        //img4.setVisibility(View.VISIBLE);
-        img5 = (ImageButton) getView().findViewById(R.id.carta5);
-        //img5.setVisibility(View.VISIBLE);
-        img6 = (ImageButton) getView().findViewById(R.id.carta6);
-        img6.setVisibility(View.VISIBLE);
+    public void iniciarImagenes(){
 
-        //img1.setI
-        //https://danielme.com/tip-android-31-image-slider-con-imageswitcher/
-        //https://www.google.com.pe/search?espv=2&biw=1366&bih=667&q=image+slider+android&sa=X&ved=0ahUKEwi559WwntnOAhWB1x4KHRQyBTgQ1QIIXSgA
-    }
+        img1 = (ImageView) getView().findViewById(R.id.carta1);
+        img2 = (ImageView) getView().findViewById(R.id.carta2);
+        img3 = (ImageView) getView().findViewById(R.id.carta3);
+        img4 = (ImageView) getView().findViewById(R.id.carta4);
+        img5 = (ImageView) getView().findViewById(R.id.carta5);
+        img6 = (ImageView) getView().findViewById(R.id.carta6);
 
-    private void iniciaAlgunasImagenes(){
-        int a, b, c, d, e;
+        images = new ImageView[]{img1,img2,img3,img4,img5,img6};
+
         Random r = new Random();
-        a = (int) (r.nextDouble()*6 + 1);
-        b = (int) (r.nextDouble()*6 + 1);
-        c = (int) (r.nextDouble()*6 + 1);
+        final int a;
+        a = (int)(r.nextDouble()*10+1);
 
-        images[a] = (ImageButton) getView().findViewById(R.id.carta1);
-        images[a].setVisibility(View.VISIBLE);
-        images[b] = (ImageButton) getView().findViewById(R.id.carta3);
-        images[b].setVisibility(View.VISIBLE);
-        images[c] = (ImageButton) getView().findViewById(R.id.carta5);
-        images[c].setVisibility(View.VISIBLE);
+        final Handler handler = new Handler();
+        final Runnable runnable = new Runnable() {
+            int i=0;
+
+            int d=1;
+
+            public void run() {
+                if(i==0) {
+                    iniciaAlgunos(a);
+                }
+                i++;
+
+                handler.postDelayed(this, 2500);
+                //for interval...
+
+                agregarEventos(galeria);
+
+                if(i==2) {
+                    int j;
+                    for (j=0;j<images.length;j++){
+                        images[j].setImageResource(galeria[j]);
+                    }
+
+                }
+
+
+            }
+
+        };
+        handler.postDelayed(runnable, 2500);
+
+
     }
 
-    private void agregarEventos(){
+    private void iniciaAlgunos(int opcion){
+
+        switch (opcion){
+            case 1:
+                images[0].setImageResource(galeria[0]);
+                images[3].setImageResource(galeria[3]);
+                images[5].setImageResource(galeria[5]);
+
+                break;
+            case 2:
+                images[1].setImageResource(galeria[1]);
+                images[2].setImageResource(galeria[2]);
+                images[5].setImageResource(galeria[5]);
+                break;
+            case 3:
+                images[0].setImageResource(galeria[0]);
+                images[1].setImageResource(galeria[1]);
+                images[4].setImageResource(galeria[4]);
+                break;
+            case 4:
+                images[2].setImageResource(galeria[2]);
+                images[3].setImageResource(galeria[3]);
+                images[5].setImageResource(galeria[5]);
+                break;
+            case 5:
+                images[3].setImageResource(galeria[3]);
+                images[4].setImageResource(galeria[4]);
+                images[5].setImageResource(galeria[5]);
+                break;
+            case 6:
+                images[0].setImageResource(galeria[0]);
+                images[1].setImageResource(galeria[1]);
+                images[2].setImageResource(galeria[2]);
+                break;
+            case 7:
+                images[1].setImageResource(galeria[1]);
+                images[2].setImageResource(galeria[2]);
+                images[4].setImageResource(galeria[4]);
+                break;
+            case 8:
+                images[1].setImageResource(galeria[1]);
+                images[2].setImageResource(galeria[2]);
+                images[3].setImageResource(galeria[3]);
+                break;
+            case 9:
+                images[0].setImageResource(galeria[0]);
+                images[2].setImageResource(galeria[2]);
+                images[4].setImageResource(galeria[4]);
+                break;
+            case 10:
+                images[0].setImageResource(galeria[0]);
+                images[1].setImageResource(galeria[1]);
+                images[5].setImageResource(galeria[5]);
+                break;
+        }
+
+    }
+
+    private void agregarEventos(int mat[]){
+
+        for (int i=0;i<mat.length;i++){
+            mat[i] = galeria[i];
+        }
+
+
+
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 //Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.nombreImagen);
                 //Bitmap bmp= BitmapFactory.decodeResource(getResources(),R.drawable.carta1);
-                controlador(1,img1);
+                //controlador(1,img1);
+                if(v==images[0]) {
+                    puntaje += 20;
+                    puntaje_p.setText(puntaje + "");
+                }
+                Toast.makeText(getActivity(), "Clicked Image1", Toast.LENGTH_SHORT).show();
+
+                //puntaje += 20;
+                //puntaje_p.setText(puntaje+"");
             }
         });
 
         img2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                controlador(2, img2);
+                //controlador(2, img2);
+                //Toast.makeText(getActivity(), "Clicked Image",Toast.LENGTH_SHORT).show();
+
+                    puntaje += 20;
+                    puntaje_p.setText(puntaje+"");
+
             }
         });
 
         img3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                controlador(3, img3);
+                //controlador(3, img3);
+                //Toast.makeText(getActivity(), "Clicked Image", Toast.LENGTH_SHORT).show();
+                if (v.equals(img3)) {
+                    puntaje += 20;
+                    puntaje_p.setText(puntaje+"");
+                }
             }
         });
 
         img4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                controlador(4, img4);
+                //controlador(4, img4);
+                //Toast.makeText(getActivity(), "Clicked Image", Toast.LENGTH_SHORT).show();
+                if (v.equals(img4)) {
+                    puntaje += 20;
+                    puntaje_p.setText(puntaje+"");
+                }
             }
         });
 
         img5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                controlador(5, img5);
+                //controlador(5, img5);
+                //Toast.makeText(getActivity(), "Clicked Image", Toast.LENGTH_SHORT).show();
+                if (v.equals(img5)) {
+                    puntaje += 20;
+                    puntaje_p.setText(puntaje+"");
+                }
             }
         });
 
         img6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                controlador(6, img6);
+                //controlador(6, img6);
+                //Toast.makeText(getActivity(), "Clicked Image", Toast.LENGTH_SHORT).show();
+                if (v.equals(img6)) {
+                    puntaje += 20;
+                    puntaje_p.setText(puntaje+"");
+                }
+                else{
+
+                }
             }
         });
     }

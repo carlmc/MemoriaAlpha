@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Proyectos\androidProjects\MemoriaAlpha\app\src\androidTest\assets"/><source path="C:\Proyectos\androidProjects\MemoriaAlpha\app\build\generated\assets\shaders\androidTest\debug"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Proyectos\MemoriaAlpha\app\src\androidTest\assets"/><source path="C:\Proyectos\MemoriaAlpha\app\build\generated\assets\shaders\androidTest\debug"/></dataSet></merger>

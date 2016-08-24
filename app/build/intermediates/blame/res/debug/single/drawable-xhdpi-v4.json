@@ -4,12 +4,12 @@
         "source": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png",
         "source": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
@@ -29,7 +29,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_button_like_icon_selected.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_button_like_icon_selected.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
@@ -41,7 +41,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_button_icon_blue.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_button_icon_blue.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_button_icon_blue.png"
     },
     {
         "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
@@ -77,7 +77,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_topnub.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_topnub.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
@@ -125,7 +125,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_favicon_white.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_favicon_white.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_favicon_white.png"
     },
     {
         "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
@@ -133,23 +133,23 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_tooltip_black_topnub.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_topnub.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\messenger_bubble_small_white.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\messenger_bubble_small_white.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\messenger_bubble_small_white.png"
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_xout.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_xout.png"
-    },
-    {
-        "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_close.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_close.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_button_send_icon_white.png",
         "source": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_button_send_icon_white.png"
+    },
+    {
+        "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_close.png",
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_close.png"
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
@@ -161,7 +161,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_button_icon_white.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_button_icon_white.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_button_icon_white.png"
     },
     {
         "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
@@ -169,7 +169,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_background.9.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_background.9.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
@@ -189,7 +189,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_bottomnub.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_bottomnub.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
@@ -265,7 +265,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_tooltip_black_xout.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_xout.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
@@ -281,7 +281,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\messenger_bubble_large_white.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\messenger_bubble_large_white.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\messenger_bubble_large_white.png"
     },
     {
         "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
@@ -301,7 +301,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_tooltip_black_bottomnub.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
@@ -349,7 +349,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\messenger_bubble_small_blue.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\messenger_bubble_small_blue.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\messenger_bubble_small_blue.png"
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
@@ -409,7 +409,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\messenger_button_send_round_shadow.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\messenger_button_send_round_shadow.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\messenger_button_send_round_shadow.png"
     },
     {
         "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
@@ -473,7 +473,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_button_send_icon_blue.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_button_send_icon_blue.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
@@ -493,11 +493,11 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\messenger_bubble_large_blue.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\messenger_bubble_large_blue.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\messenger_bubble_large_blue.png"
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_tooltip_black_background.9.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_background.9.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
@@ -521,7 +521,7 @@
     },
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_button_send_icon_white.png",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\drawable-xhdpi-v4\\com_facebook_button_send_icon_white.png"
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xhdpi-v4\\com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",

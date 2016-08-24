@@ -84,9 +84,6 @@
         android:layout_weight="4"
         android:background="#c6e431">
 
-
-
-
             <!--<Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -150,26 +147,26 @@
                 <TableRow
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center">
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="50dp">
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/carta1"
                         android:layout_column="2"
-                        android:src="@drawable/img1"
-                        android:layout_marginLeft="60dp"
-                        android:visibility="invisible"/>
+                        android:layout_marginLeft="100dp"
+                        android:src="@drawable/alfa"/>
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/carta2"
-                        android:layout_column="6"
-                        android:src="@drawable/img2"
-                        android:layout_marginLeft="60dp"
-                        android:layout_marginRight="60dp"
-                        android:visibility="invisible"/>
+                        android:layout_column="4"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="100dp"
+                        android:src="@drawable/alfa"/>
 
                 </TableRow>
 
@@ -177,26 +174,25 @@
                 <TableRow
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center">
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="50dp">
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/carta3"
                         android:layout_column="2"
-                        android:src="@drawable/img3"
-                        android:layout_marginLeft="60dp"
-                        android:visibility="invisible"/>
+                        android:layout_marginLeft="100dp"
+                        android:src="@drawable/alfa"/>
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/carta4"
-                        android:layout_column="6"
-                        android:src="@drawable/img4"
-                        android:layout_marginLeft="60dp"
-                        android:layout_marginRight="60dp"
-                        android:visibility="invisible"/>
+                        android:layout_column="4"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="100dp"
+                        android:src="@drawable/alfa"/>
 
                 </TableRow>
 
@@ -205,24 +201,22 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center">
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/carta5"
                         android:layout_column="2"
-                        android:src="@drawable/img5"
-                        android:layout_marginLeft="60dp"
-                        android:visibility="invisible"/>
+                        android:layout_marginLeft="100dp"
+                        android:src="@drawable/alfa"/>
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/carta6"
-                        android:layout_column="6"
-                        android:src="@drawable/img6"
-                        android:layout_marginLeft="60dp"
-                        android:layout_marginRight="60dp"
-                        android:visibility="invisible"/>
+                        android:layout_column="4"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="100dp"
+                        android:src="@drawable/alfa"/>
 
                 </TableRow>
 

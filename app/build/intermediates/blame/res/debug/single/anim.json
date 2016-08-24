@@ -12,12 +12,16 @@
         "source": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\anim\\design_fab_in.xml"
     },
     {
+        "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\anim\\abc_fade_in.xml"
+    },
+    {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
         "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\anim\\design_snackbar_out.xml"
     },
     {
-        "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\anim\\abc_fade_in.xml"
+        "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_out.xml",
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\src\\main\\res\\anim\\fade_out.xml"
     },
     {
         "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
@@ -66,6 +70,10 @@
     {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
         "source": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_in.xml",
+        "source": "C:\\Proyectos\\MemoriaAlpha\\app\\src\\main\\res\\anim\\fade_in.xml"
     },
     {
         "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
