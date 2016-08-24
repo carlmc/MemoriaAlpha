@@ -167,15 +167,34 @@ public class InterfazJuegoFragment extends Fragment implements Runnable{
         img1 = (ImageButton) getView().findViewById(R.id.carta1);
         img1.setVisibility(View.VISIBLE);
         img2 = (ImageButton) getView().findViewById(R.id.carta2);
-        img2.setVisibility(View.VISIBLE);
+        //img2.setVisibility(View.VISIBLE);
         img3 = (ImageButton) getView().findViewById(R.id.carta3);
         img3.setVisibility(View.VISIBLE);
         img4 = (ImageButton) getView().findViewById(R.id.carta4);
-        img4.setVisibility(View.VISIBLE);
+        //img4.setVisibility(View.VISIBLE);
         img5 = (ImageButton) getView().findViewById(R.id.carta5);
-        img5.setVisibility(View.VISIBLE);
+        //img5.setVisibility(View.VISIBLE);
         img6 = (ImageButton) getView().findViewById(R.id.carta6);
         img6.setVisibility(View.VISIBLE);
+
+        //img1.setI
+        //https://danielme.com/tip-android-31-image-slider-con-imageswitcher/
+        //https://www.google.com.pe/search?espv=2&biw=1366&bih=667&q=image+slider+android&sa=X&ved=0ahUKEwi559WwntnOAhWB1x4KHRQyBTgQ1QIIXSgA
+    }
+
+    private void iniciaAlgunasImagenes(){
+        int a, b, c, d, e;
+        Random r = new Random();
+        a = (int) (r.nextDouble()*6 + 1);
+        b = (int) (r.nextDouble()*6 + 1);
+        c = (int) (r.nextDouble()*6 + 1);
+
+        images[a] = (ImageButton) getView().findViewById(R.id.carta1);
+        images[a].setVisibility(View.VISIBLE);
+        images[b] = (ImageButton) getView().findViewById(R.id.carta3);
+        images[b].setVisibility(View.VISIBLE);
+        images[c] = (ImageButton) getView().findViewById(R.id.carta5);
+        images[c].setVisibility(View.VISIBLE);
     }
 
     private void agregarEventos(){

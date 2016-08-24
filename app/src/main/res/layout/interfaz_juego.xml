@@ -22,10 +22,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Puntaje:"
                 android:id="@+id/textpuntos"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true"
                 android:layout_marginLeft="20dp"
-                android:paddingTop="10dp"/>
+                android:layout_alignBottom="@+id/name"
+                android:layout_alignParentStart="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -55,8 +54,7 @@
                 android:id="@+id/time"
                 android:layout_centerVertical="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginLeft="20dp"
-                android:paddingTop="20dp"/>
+                android:layout_marginLeft="20dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -65,7 +63,7 @@
                 android:text="0"
                 android:id="@+id/tiempo_e"
                 android:layout_marginLeft="10dp"
-                android:layout_alignBottom="@+id/time"
+                android:layout_alignTop="@+id/time"
                 android:layout_alignStart="@+id/puntaje_e" />
 
             <ImageView
@@ -86,12 +84,7 @@
         android:layout_weight="4"
         android:background="#c6e431">
 
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin" >
+
 
 
             <!--<Button
@@ -165,7 +158,8 @@
                         android:id="@+id/carta1"
                         android:layout_column="2"
                         android:src="@drawable/img1"
-                        android:layout_marginLeft="60dp"/>
+                        android:layout_marginLeft="60dp"
+                        android:visibility="invisible"/>
 
                     <ImageButton
                         android:layout_width="wrap_content"
@@ -174,7 +168,8 @@
                         android:layout_column="6"
                         android:src="@drawable/img2"
                         android:layout_marginLeft="60dp"
-                        android:layout_marginRight="60dp"/>
+                        android:layout_marginRight="60dp"
+                        android:visibility="invisible"/>
 
                 </TableRow>
 
@@ -190,7 +185,8 @@
                         android:id="@+id/carta3"
                         android:layout_column="2"
                         android:src="@drawable/img3"
-                        android:layout_marginLeft="60dp"/>
+                        android:layout_marginLeft="60dp"
+                        android:visibility="invisible"/>
 
                     <ImageButton
                         android:layout_width="wrap_content"
@@ -199,7 +195,8 @@
                         android:layout_column="6"
                         android:src="@drawable/img4"
                         android:layout_marginLeft="60dp"
-                        android:layout_marginRight="60dp"/>
+                        android:layout_marginRight="60dp"
+                        android:visibility="invisible"/>
 
                 </TableRow>
 
@@ -214,7 +211,8 @@
                         android:id="@+id/carta5"
                         android:layout_column="2"
                         android:src="@drawable/img5"
-                        android:layout_marginLeft="60dp"/>
+                        android:layout_marginLeft="60dp"
+                        android:visibility="invisible"/>
 
                     <ImageButton
                         android:layout_width="wrap_content"
@@ -223,7 +221,8 @@
                         android:layout_column="6"
                         android:src="@drawable/img6"
                         android:layout_marginLeft="60dp"
-                        android:layout_marginRight="60dp"/>
+                        android:layout_marginRight="60dp"
+                        android:visibility="invisible"/>
 
                 </TableRow>
 
@@ -232,8 +231,6 @@
 
 
         </RelativeLayout>
-
-    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
