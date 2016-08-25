@@ -21,9 +21,27 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Puntaje:"
-                android:id="@+id/textpuntos"
-                android:layout_marginLeft="20dp"
-                android:layout_alignBottom="@+id/name"
+                android:id="@+id/textView22"
+                android:layout_below="@+id/name"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/puntos"
+                android:layout_alignTop="@+id/textView22"
+                android:layout_toEndOf="@+id/textView22" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tiempo:"
+                android:id="@+id/textView23"
+                android:layout_below="@+id/textView22"
                 android:layout_alignParentStart="true" />
 
             <TextView
@@ -31,10 +49,28 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="0"
-                android:id="@+id/puntaje_e"
-                android:layout_alignBottom="@+id/profile"
-                android:layout_toEndOf="@+id/textpuntos"
-                android:layout_marginLeft="10dp"/>
+                android:id="@+id/times"
+                android:layout_below="@+id/puntos"
+                android:layout_toEndOf="@+id/textView22" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Pausa"
+                android:id="@+id/textView24"
+                android:layout_alignBottom="@+id/name"
+                android:layout_toStartOf="@+id/name"
+                android:layout_marginEnd="65dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pause"
+                android:layout_below="@+id/textView24"
+                android:layout_alignEnd="@+id/textView24"
+                android:background="@drawable/boton_pausa"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -46,32 +82,12 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Tiempo:"
-                android:id="@+id/time"
-                android:layout_centerVertical="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginLeft="20dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="0"
-                android:id="@+id/tiempo_e"
-                android:layout_marginLeft="10dp"
-                android:layout_alignTop="@+id/time"
-                android:layout_alignStart="@+id/puntaje_e" />
-
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/profile"
-                android:layout_below="@+id/textpuntos"
                 android:layout_alignEnd="@+id/name" />
+
 
         </RelativeLayout>
 
@@ -142,7 +158,8 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true">
+                android:layout_alignParentStart="true"
+                android:background="@drawable/fondo_juego">
 
                 <TableRow
                     android:layout_width="wrap_content"
@@ -230,23 +247,23 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_weight="1"
-        android:background="#c6e431">
+        android:background="#bfd74e">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Salir"
             android:id="@+id/salir5"
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:background="@drawable/boton_salir"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ayuda"
             android:id="@+id/button2"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/boton_ayuda"/>
     </RelativeLayout>
 
 </LinearLayout>

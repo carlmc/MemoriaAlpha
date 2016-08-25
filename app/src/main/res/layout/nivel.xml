@@ -2,50 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#c6e431">
-
-    <ImageView
-        android:layout_width="275dp"
-        android:layout_height="100dp"
-        android:id="@+id/imageView4"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/alfa"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="180dp"
-        android:id="@+id/imageView5"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/logo"
-        android:layout_below="@+id/imageView4"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="SIGUE LAS SECUENCIAS DE LA MANERA QUE EL JUEGO TE INDICA"
-        android:id="@+id/textView4"
-        android:layout_marginTop="27dp"
-        android:layout_below="@+id/imageView5"
-        android:layout_alignStart="@+id/imageView5" />
+    android:background="@drawable/pantalla_nivel">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="JUGAR"
         android:id="@+id/jugar"
-        android:layout_below="@+id/textView4"
-        android:layout_centerHorizontal="true" />
+        android:background="@drawable/boton_jugar"
+        android:layout_above="@+id/salir1"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/salir"
+        android:layout_height="60dp"
         android:id="@+id/salir1"
+        android:background="@drawable/boton_salir"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="28dp" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

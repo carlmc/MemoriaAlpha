@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
-        "source": "C:\\Proyectos\\androidProjects\\MemoriaAlpha\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Proyectos\\MemoriaAlpha\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
         "source": "C:\\Proyectos\\MemoriaAlpha\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     }

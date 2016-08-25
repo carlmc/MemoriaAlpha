@@ -80,7 +80,7 @@ ADDED from C:\Proyectos\MemoriaAlpha\app\src\main\AndroidManifest.xml:29:9-31:20
 	android:name
 		ADDED from C:\Proyectos\MemoriaAlpha\app\src\main\AndroidManifest.xml:29:19-48
 activity#com.facebook.FacebookActivity
-ADDED from C:\Proyectos\MemoriaAlpha\app\src\main\AndroidManifest.xml:33:9-37:75
+ADDED from C:\Proyectos\MemoriaAlpha\app\src\main\AndroidManifest.xml:33:9-37:74
 MERGED from [com.facebook.android:facebook-android-sdk:4.15.0] C:\Proyectos\MemoriaAlpha\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.15.0\AndroidManifest.xml:29:9-32:75
 	android:label
 		ADDED from C:\Proyectos\MemoriaAlpha\app\src\main\AndroidManifest.xml:36:13-45

@@ -1,9 +1,11 @@
 package com.example.desarrollador.memoriaalpha;
 
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
@@ -32,6 +34,7 @@ public class InterfazJuegoFragment extends Fragment implements Runnable{
     private ImageView profile_pic = null;
     private TextView tv = null;
     private Button salir = null;
+    private Button pausar = null;
     private Profile profile = null;
 
     private TextView puntaje_p = null;
@@ -55,7 +58,6 @@ public class InterfazJuegoFragment extends Fragment implements Runnable{
 
     private static final Integer duracion = 2500;
     private Timer timer;
-    private int posicion;
 
     private int valorSelect = -1;
     private int valorBorrar = 0;
@@ -69,9 +71,10 @@ public class InterfazJuegoFragment extends Fragment implements Runnable{
         profile_pic = (ImageView) view.findViewById(R.id.profile);
         tv = (TextView) view.findViewById(R.id.name);
         salir = (Button) view.findViewById(R.id.salir5);
+        pausar = (Button) view.findViewById(R.id.pause);
 
-        puntaje_p = (TextView) view.findViewById(R.id.puntaje_e);
-        tiempo_p = (TextView) view.findViewById(R.id.tiempo_e);
+        puntaje_p = (TextView) view.findViewById(R.id.puntos);
+        tiempo_p = (TextView) view.findViewById(R.id.times);
 
         return view;
     }
@@ -98,13 +101,25 @@ public class InterfazJuegoFragment extends Fragment implements Runnable{
         tv.setText(profile.getName());
 
         Picasso.with(getActivity())
-                .load(profile.getProfilePictureUri(200, 200).toString())
+                .load(profile.getProfilePictureUri(100, 100).toString())
                 .into(profile_pic);
 
         salir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 logout();
+            }
+        });
+
+        pausar.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v){
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager
+                        .beginTransaction();
+                fragmentTransaction.replace(R.id.mainContainer, new Pausar()).addToBackStack(null);
+                fragmentTransaction.commit();
             }
         });
 
@@ -192,35 +207,43 @@ public class InterfazJuegoFragment extends Fragment implements Runnable{
         a = (int)(r.nextDouble()*10+1);
 
         final Handler handler = new Handler();
-        final Runnable runnable = new Runnable() {
-            int i=0;
 
-            int d=1;
+        new CountDownTimer(20000, 1000){
+
+            public void onTick(long mill){
+                tiempo_p.setText(mill/1000+"");
+            }
+
+            public void onFinish(){
+                tiempo_p.setText("Tiempo Terminado!");
+            }
+        };
+
+        final Runnable runnable = new Runnable() {
+            int i = 0;
 
             public void run() {
-                if(i==0) {
+                if (i == 0) {
                     iniciaAlgunos(a);
                 }
                 i++;
 
-                handler.postDelayed(this, 2500);
-                //for interval...
+                handler.postDelayed(this, duracion);
 
                 agregarEventos(galeria);
 
-                if(i==2) {
+                if (i == 2) {
                     int j;
-                    for (j=0;j<images.length;j++){
+                    for (j = 0; j < images.length; j++) {
                         images[j].setImageResource(galeria[j]);
                     }
 
                 }
 
-
             }
 
         };
-        handler.postDelayed(runnable, 2500);
+        handler.postDelayed(runnable, duracion);
 
 
     }
@@ -283,6 +306,8 @@ public class InterfazJuegoFragment extends Fragment implements Runnable{
 
     }
 
+
+
     private void agregarEventos(int mat[]){
 
         for (int i=0;i<mat.length;i++){
@@ -295,14 +320,12 @@ public class InterfazJuegoFragment extends Fragment implements Runnable{
             @Override
             public void onClick(View v) {
 
-                //Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.nombreImagen);
-                //Bitmap bmp= BitmapFactory.decodeResource(getResources(),R.drawable.carta1);
                 //controlador(1,img1);
                 if(v==images[0]) {
                     puntaje += 20;
                     puntaje_p.setText(puntaje + "");
                 }
-                Toast.makeText(getActivity(), "Clicked Image1", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "Clicked Image1", Toast.LENGTH_SHORT).show();
 
                 //puntaje += 20;
                 //puntaje_p.setText(puntaje+"");
@@ -378,7 +401,7 @@ public class InterfazJuegoFragment extends Fragment implements Runnable{
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager
                 .beginTransaction();
-        fragmentTransaction.replace(R.id.mainContainer, new LoginFragment());
+        fragmentTransaction.replace(R.id.mainContainer, new LoginFragment()).addToBackStack(null);
         fragmentTransaction.commit();
     }
 

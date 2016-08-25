@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c6e431">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sticker Bonus"
+        android:id="@+id/textView19" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView15"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageSwitcher
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:background="@mipmap/ic_launcher"
+        android:layout_below="@+id/textView19"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageSwitcher">
+
+    </ImageSwitcher>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="descarga como wallpaper"
+        android:id="@+id/button3"
+        android:layout_below="@+id/imageSwitcher"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="comparte y gana puntos extra"
+        android:id="@+id/button4"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_toEndOf="@+id/button3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="continuar jugando"
+        android:id="@+id/button5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="83dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="salir"
+        android:id="@+id/button6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/imageView15" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView16"
+        android:background="@mipmap/ic_launcher"
+        android:layout_above="@+id/textView21"
+        android:layout_toStartOf="@+id/textView20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Recuerda compartir el app o los stickers para ganar más puntaje y poder ganar una tablet s6."
+        android:id="@+id/textView20"
+        android:layout_below="@+id/button3"
+        android:layout_toEndOf="@+id/textView19" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Conoce más sobre el premio"
+        android:id="@+id/textView21"
+        android:layout_above="@+id/button5"
+        android:layout_alignStart="@+id/textView20" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_marginBottom="107dp"
+        android:background="@drawable/f_izquierda"
+        android:layout_above="@+id/button4"
+        android:layout_alignStart="@+id/imageView16" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:background="@drawable/f_derecha"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_toEndOf="@+id/textView21" />
+
+</RelativeLayout>

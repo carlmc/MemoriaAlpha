@@ -2,36 +2,39 @@ package com.example.desarrollador.memoriaalpha;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 
-public class Nivel extends AppCompatActivity {
+public class Nivel extends Fragment {
     private Button jugar, salir;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.nivel);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        jugar = (Button) findViewById(R.id.jugar);
-        salir = (Button) findViewById(R.id.salir1);
+        View view = inflater.inflate(R.layout.interfaz_juego, container, false);
+
+        jugar = (Button) view.findViewById(R.id.jugar);
 
         jugar.setOnClickListener(new View.OnClickListener(){
+
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(Nivel.this, Inicio.class);
-                startActivity(intent);
-                finish();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.mainContainer, new InterfazJuegoFragment());
+                fragmentTransaction.commit();
             }
         });
 
-        salir.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                finish();
-            }
-        });
+        return view;
     }
 }

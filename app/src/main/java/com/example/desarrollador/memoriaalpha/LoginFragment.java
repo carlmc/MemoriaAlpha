@@ -153,23 +153,18 @@ public class LoginFragment extends Fragment{
             @Override
             public void onClick(View v){
 
-                Intent intent = new Intent(getActivity(),InterfazJuegoFragment.class);
-                startActivity(intent);
+                ingresajuego();
 
             }
         });
     }
 
     public void ingresajuego(){
-        Intent intent = new Intent(getActivity().getApplication(),InterfazJuegoFragment.class);
-        startActivity(intent);
+        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.mainContainer, new InterfazJuegoFragment());
+        fragmentTransaction.commit();
     }
-
-    /*private void goPremio(){
-        Intent intent = new Intent(LoginFragment.this, Premio.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
-    }*/
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

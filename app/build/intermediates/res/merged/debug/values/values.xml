@@ -353,7 +353,7 @@
     <string name="com_facebook_share_button_text">Share</string>
     <string name="com_facebook_tooltip_default">New! You\'re in control - choose what info you want to share with apps.</string>
     <string name="error_login">Ocurrió un error al ingresar</string>
-    <string name="facebook_app_id">1648718082110504</string>
+    <string name="facebook_app_id">fb1648718082110504</string>
     <string name="messenger_send_button_text">Send</string>
     <string name="salir">Salir</string>
     <string name="seguir_jugando">Continuar Jugando</string>
